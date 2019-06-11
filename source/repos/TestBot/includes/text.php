@@ -24,6 +24,8 @@ if (strtolower($message['text']) == "text" || $message['text'] == "文字"){
             array(
                 'type' => 'text', // 訊息類型 (文字)
                 'text' => 'Hello, world!' // 回復訊息
+				'type' => '張博涵', // 訊息類型 (文字)
+                'text' => '踏馬的雞巴人' // 回復訊息
             )
         )
     ));
