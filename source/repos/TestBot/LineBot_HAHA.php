@@ -58,6 +58,9 @@ foreach ($client->parseEvents() as $event) {
                     require_once('includes/sticker.php'); // Type: Sticker
                     require_once('includes/imagemap.php'); // Type: Imagemap
                     require_once('includes/template.php'); // Type: Template
+					require_once('includes/function.php'); // Type: Function
+					require_once('includes/game.php');
+					require_once('includes/user_defined_text.php');
                     break;
                 default:
                     //error_log("Unsupporeted message type: " . $message['type']);
@@ -73,10 +76,7 @@ foreach ($client->parseEvents() as $event) {
                 'messages' => array(
                     array(
                         'type' => 'text',
-                        'text' => '您好，這是一個範例 Bot OuO
-
-範例程式開源至 GitHub (包含教學)：
-https://github.com/GoneTone/line-example-bot-php'
+                        'text' => '我是鋼鐵人(Line機器人ver 1.00)'
                     )
                 )
             ));
@@ -87,10 +87,7 @@ https://github.com/GoneTone/line-example-bot-php'
                 'messages' => array(
                     array(
                         'type' => 'text',
-                        'text' => '大家好，這是一個範例 Bot OuO
-
-範例程式開源至 GitHub (包含教學)：
-https://github.com/GoneTone/line-example-bot-php'
+                        'text' => '我是鋼鐵人(Line機器人ver 1.00)'
                     )
                 )
             ));

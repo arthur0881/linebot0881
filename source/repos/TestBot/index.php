@@ -1,1 +1,12 @@
-<?php include("index.html") ?>
+<?php 
+echo '123456';
+
+
+
+
+
+
+
+
+
+ ?>
