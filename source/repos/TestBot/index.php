@@ -1,5 +1,5 @@
 <?php 
-echo '123456AAAAAAAAAAAAAAAAAAAAa';
+echo '123456';
 
 
 

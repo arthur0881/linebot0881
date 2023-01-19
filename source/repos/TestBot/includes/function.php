@@ -3,9 +3,10 @@
 ini_set('allow_url_fopen','On');
 ini_set('allow_url_include','On');
 
-//功能 : 測試用
-if ($message['text'] == "!test"){	
-	$result = "QWERTYHHHHHCCCCCCCCSCCHHHHH";
+//TEST
+if ($message['text'] == "!TTT"){	
+	$result = "TTT";
+
 	
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
