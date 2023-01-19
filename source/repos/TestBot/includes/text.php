@@ -11,7 +11,7 @@ switch($message['text']){
 		$ReplyText = "明早8點打球，誰遲到誰當球";
 	break;
 	case "!自我介紹":		
-		$ReplyText = "我是鋼鐵人(Line機器人ver 1.00)";
+		$ReplyText = "我是鋼鐵人(Line機器人ver 2.08)";
 	break;
 	case "!張博涵":		
 		$ReplyText = "雞巴人";

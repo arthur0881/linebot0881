@@ -3,6 +3,22 @@
 ini_set('allow_url_fopen','On');
 ini_set('allow_url_include','On');
 
+//功能 : 測試用
+if ($message['text'] == "!test"){	
+	$result = "QWERTYHHHHHCCCCCCCCSCCHHHHH";
+	
+    $client->replyMessage(array(
+        'replyToken' => $event['replyToken'],
+        'messages' => array(
+            array(
+                'type' => 'text', // 訊息類型 (文字)
+                'text' => $result // 回復訊息
+            )
+			
+        )
+    ));
+}
+
 //功能 : 猜拳
 if ($message['text'] == "!猜拳"){	
 	$result = "";
@@ -205,4 +221,34 @@ if ($message['text'] == "!早餐喝什麼"){
         )
     ));
 }
+
+//功能 : 能不能出發去日本占卜
+if ($message['text'] == "!肺炎占卜"){	
+	$result = "";
+	switch(rand(1,3))
+	{
+		case 1:
+			$result = "讚啦 一定可以去";
+		break;
+		case 2:
+			$result = "不好說 繼續觀望";
+		break;
+		case 3:
+			$result = "沒救了呵呵呵";
+		break;
+
+	}
+	
+    $client->replyMessage(array(
+        'replyToken' => $event['replyToken'],
+        'messages' => array(
+            array(
+                'type' => 'text', // 訊息類型 (文字)
+                'text' => $result // 回復訊息
+            )
+			
+        )
+    ));
+}
+
 ?>
